@@ -10,8 +10,8 @@ Creati un cont pe Github (**daca nu aveti**) si faceti **fork** la [proiect](htt
 Vizionati capitolele **01 - 8** din [Laravel from Scratch](https://laracasts.com/series/laravel-from-scratch-2018)
 
 ## 4. Proiect
-Installati [**XAMPP**](https://www.apachefriends.org/ro/index.html)
-Creati un host nou *http://tema1.local* in **XAMPP**
+Installati [**XAMPP**](https://www.apachefriends.org/ro/index.html).
+Creati un host nou *http://tema1.local* in **XAMPP**.
 Instalati **Laravel**, in folderul unde ati fork-uit proiectul Roweb, asa cum ati vazut pe [Laracasts](https://laracasts.com/series/laravel-from-scratch-2018)
 Creati o baza de date noua, cu numele *practica2018*. Creati **doua** tabele denumite *companies* si *employees*. Adaugati date de test in cele 2 tabele. Campurile lor sunt:
     
