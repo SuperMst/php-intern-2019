@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2019 at 12:39 PM
+-- Generation Time: Jul 13, 2019 at 01:01 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -34,6 +34,14 @@ CREATE TABLE `companies` (
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `companies`
+--
+
+INSERT INTO `companies` (`id`, `name`, `description`) VALUES
+(1, 'Kaufland', 'Lant de magazine cu provenienta germana'),
+(2, 'eMAG', 'Companie romaneasca de eCommerce');
+
 -- --------------------------------------------------------
 
 --
@@ -45,6 +53,15 @@ CREATE TABLE `employees` (
   `company_id` int(10) UNSIGNED NOT NULL,
   `name` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `employees`
+--
+
+INSERT INTO `employees` (`id`, `company_id`, `name`) VALUES
+(1, 1, 'Marinel Marian'),
+(2, 1, 'Stefan Constantin Mihail Cristia'),
+(3, 2, 'Tolea Ciumac');
 
 --
 -- Indexes for dumped tables
