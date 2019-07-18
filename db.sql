@@ -60,7 +60,7 @@ CREATE TABLE `employees` (
 
 INSERT INTO `employees` (`id`, `company_id`, `name`) VALUES
 (1, 1, 'Marinel Marian'),
-(2, 1, 'Stefan Constantin Mihail Cristia'),
+(2, 1, 'Stefan Constantin Mihail Cristian'),
 (3, 2, 'Tolea Ciumac');
 
 --

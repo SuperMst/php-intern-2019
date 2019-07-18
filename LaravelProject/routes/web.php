@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', 'AboutController@index');
+
+Route::get('/employees', 'EmployeesController@show');
+Route::post('/employees', 'EmployeesController@create');
+
