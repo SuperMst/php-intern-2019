@@ -28,4 +28,29 @@ class EmployeesController extends Controller
         $employee->save();
         return back();
     }
+
+    public function delete($id){
+        $employee = Employee::find($id);
+        $employee->delete();
+        return redirect('/employees');
+    }
+
+    public function edit($id){
+        
+        $employee = Employee::find($id);
+        $companies = Company::all();
+
+        return view('business.edit',compact('employee','companies'));
+    }
+
+    public function update(Request $request, $id){
+        $employee = Employee::find($id);
+        $request->validate([
+            'updatedName' => 'required|min:3',
+        ]);
+        $employee->name = $request->updatedName;
+        $employee->company_id = $request->updatedCompany; 
+        $employee->save(); 
+        return redirect('employees'); 
+    }
 }
