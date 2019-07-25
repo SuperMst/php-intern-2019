@@ -36,6 +36,7 @@
             <table class=" table table-stripped table-dark">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Nume</th>
                         <th>Companie</th>
                     </tr>
@@ -43,7 +44,8 @@
                 <tbody>
                     @foreach($employees as $employee)
                         <tr>
-                            <td class="col-6">{{$employee['name']}}</td>
+                            <th class="col-1">{{$employee['id']}}</td>
+                            <td class="col-5">{{$employee['name']}}</td>
                             <td class="col-3">{{$employee['company_name']}}</td>
                             <td>
                                 <form action="{{ route('employee.delete', $employee->id)}}" method="POST">
