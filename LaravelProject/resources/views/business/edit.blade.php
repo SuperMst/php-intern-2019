@@ -24,7 +24,8 @@
                         <input type="text" value="{{$employee['name']}}" class="form-control" id="employeeName" name="updatedName">
                     </div>
                     <div class="form-col px-1">
-                        <select name="updatedCompany" id="">
+                        <label for="employeeCompany">Employee Company</label>
+                        <select class="browser-default custom-select" name="updatedCompany" id="employeeCompany">
                             <label for="description">Name</label>
                             @foreach($companies as $company)
                                 @if($company->id === $employee->company_id)
@@ -35,6 +36,8 @@
                             @endforeach
                         </select>
                     </div>
+                </div>
+                <div class="form-row justify-content-end pt-2">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form> 
